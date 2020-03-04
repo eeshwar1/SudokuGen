@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		650171B9240E10CF001FBB20 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650171B8240E10CF001FBB20 /* main.swift */; };
+		65FA532D240F461800FA8201 /* VUDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA532C240F461800FA8201 /* VUDebug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		650171B5240E10CF001FBB20 /* SudokuGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SudokuGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		650171B8240E10CF001FBB20 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		65FA532C240F461800FA8201 /* VUDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VUDebug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		650171AC240E10CF001FBB20 = {
 			isa = PBXGroup;
 			children = (
+				65FA532C240F461800FA8201 /* VUDebug.swift */,
 				650171B7240E10CF001FBB20 /* SudokuGen */,
 				650171B6240E10CF001FBB20 /* Products */,
 			);
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FA532D240F461800FA8201 /* VUDebug.swift in Sources */,
 				650171B9240E10CF001FBB20 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
