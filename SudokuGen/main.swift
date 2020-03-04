@@ -326,11 +326,12 @@ class Puzzle {
 
 print("Creating Puzzle...")
 
+let runTimer = RunTimer()
 var puzzle = Puzzle()
 
 let (grid, puzzleGrid) =  puzzle.createPuzzle()
 
-print("Done")
+print("Done in \(runTimer.stop()) seconds")
 
 print(grid)
 print(puzzleGrid)
