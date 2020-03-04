@@ -17,8 +17,8 @@ enum MessageType: Int {
 }
 enum DEBUG_LEVEL: Int {
     case all = 0
-    case none = 9
     case some = 1
+    case none = 9
 }
 
 class VUDebug {
