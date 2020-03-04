@@ -15,7 +15,8 @@ enum MessageType: Int {
     case warn = 1
     case error = 2
 }
-enum DEBUG_LEVEL: Int {
+
+enum DebugLevel: Int {
     case all = 0
     case some = 1
     case none = 9
@@ -23,7 +24,7 @@ enum DEBUG_LEVEL: Int {
 
 class VUDebug {
     
-    static var debugLevel: DEBUG_LEVEL = .all
+    static var debugLevel: DebugLevel = .all
     
     static func print(message: String, level: MessageType) {
         
