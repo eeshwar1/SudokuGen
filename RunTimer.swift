@@ -7,20 +7,27 @@
 //
 
 import CoreFoundation
+import Foundation
 
 class RunTimer {
 
     let startTime:CFAbsoluteTime
     var endTime:CFAbsoluteTime?
+    
+    let numberFormatter: NumberFormatter
 
     init() {
         startTime = CFAbsoluteTimeGetCurrent()
+        numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.minimumFractionDigits = 2
     }
 
-    func stop() -> CFAbsoluteTime {
+    func stop() -> String {
         endTime = CFAbsoluteTimeGetCurrent()
 
-        return duration!
+        return numberFormatter.string(for: duration!) ?? "Invalid"
     }
 
     var duration:CFAbsoluteTime? {
@@ -30,4 +37,6 @@ class RunTimer {
             return nil
         }
     }
+    
+   
 }
