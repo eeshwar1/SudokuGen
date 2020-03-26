@@ -112,19 +112,19 @@ class Puzzle {
     
     var counter = 1
     
-    func createPuzzle() -> ([[Int]],[[Int]])
+    func createPuzzle() -> (puzzle: [[Int]], solution: [[Int]])
     {
         grid = Array(repeating: Array(repeating: 0, count: dimension), count: dimension)
         
         let _ = fillGrid()
         
-        let fullGrid = self.grid
+        let solutionGrid = self.grid
         
         let _ = generatePuzzle()
         
         let puzzleGrid = self.grid
         
-        return (fullGrid,puzzleGrid)
+        return (puzzleGrid,solutionGrid)
     }
     
     func checkGrid() -> Bool {
@@ -331,7 +331,7 @@ print("Creating Puzzle...")
 
 //runLoop = RunLoop.current
 
-var puzzles: [[[Int]]] = []
+var puzzles: [(puzzle: [[Int]],solution: [[Int]])] = []
 
 /*
 func puzzleGen(name: String) {
@@ -387,14 +387,15 @@ autoreleasepool(invoking: {
  */
 
 
-func generatePuzzle(name: String) -> [[Int]] {
+func generatePuzzle(name: String) -> ([[Int]], [[Int]]) {
     
     print("\(name): generating puzzle...")
     let puzzle = Puzzle()
     let runTimer = RunTimer()
     
+    var solutionGrid : [[Int]] = []
     var puzzleGrid : [[Int]] = []
-    (_, puzzleGrid) = puzzle.createPuzzle()
+    (puzzle: puzzleGrid, solutionGrid) = puzzle.createPuzzle()
     
     /*DispatchQueue.main.async {
 
@@ -407,7 +408,7 @@ func generatePuzzle(name: String) -> [[Int]] {
     }*/
     
     print("\(name): Done in \(runTimer.stop()) seconds")
-    return puzzleGrid
+    return (puzzleGrid, solutionGrid)
 
 }
 
@@ -419,6 +420,7 @@ for i in 1...5 {
     
     print("Loop \(i)")
     queue.async(group: group, execute: DispatchWorkItem() {
+        
         puzzles.append(generatePuzzle(name: "Puzzle \(i)"))
     })
 }
