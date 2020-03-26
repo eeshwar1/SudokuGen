@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		650171B9240E10CF001FBB20 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650171B8240E10CF001FBB20 /* main.swift */; };
+		650969DC242C3F0800809ADD /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650969DB242C3F0800809ADD /* Puzzle.swift */; };
 		65FA532D240F461800FA8201 /* VUDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA532C240F461800FA8201 /* VUDebug.swift */; };
 		65FA5331240F81A400FA8201 /* RunTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA5330240F81A400FA8201 /* RunTimer.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		650171B5240E10CF001FBB20 /* SudokuGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SudokuGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		650171B8240E10CF001FBB20 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		650969DB242C3F0800809ADD /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
 		65FA532C240F461800FA8201 /* VUDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VUDebug.swift; sourceTree = "<group>"; };
 		65FA5330240F81A400FA8201 /* RunTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				650171B8240E10CF001FBB20 /* main.swift */,
+				650969DB242C3F0800809ADD /* Puzzle.swift */,
 			);
 			path = SudokuGen;
 			sourceTree = "<group>";
@@ -95,7 +98,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Venky UL";
 				TargetAttributes = {
 					650171B4240E10CF001FBB20 = {
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FA532D240F461800FA8201 /* VUDebug.swift in Sources */,
+				650969DC242C3F0800809ADD /* Puzzle.swift in Sources */,
 				65FA5331240F81A400FA8201 /* RunTimer.swift in Sources */,
 				650171B9240E10CF001FBB20 /* main.swift in Sources */,
 			);
@@ -251,6 +255,7 @@
 		650171BD240E10CF001FBB20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74757A785Z;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -262,6 +267,7 @@
 		650171BE240E10CF001FBB20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74757A785Z;
 				ENABLE_HARDENED_RUNTIME = YES;
